@@ -395,11 +395,11 @@ describe('Function "turnHoursToMinutes"', () => {
   it('should be declared', () => {
     expect(typeof turnHoursToMinutes).toBe('function');
   });
-
+  
   it('should return an array', () => {
     expect(turnHoursToMinutes(movies) instanceof Array).toBe(true);
   });
-
+  
   it('should return a new array, not mutate the original one', () => {
     const returnValue = turnHoursToMinutes(movies);
     expect(returnValue instanceof Array).toBe(true);
